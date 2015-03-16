@@ -1,0 +1,11 @@
+{
+  "name": "puppetfinland-hardlink",
+  "version": "0.1.0",
+  "author": "Puppet-Finland team",
+  "license": "BSD license",
+  "summary": "Manage hardlinks",
+  "source": "https://github.com/Puppet-Finland/hardlink.git",
+  "project_page": "https://github.com/Puppet-Finland/hardlink",
+  "dependencies": [
+  ]
+}
