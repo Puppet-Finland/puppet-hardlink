@@ -4,7 +4,8 @@ A Puppet module for managing hardlinks.
 
 # Module usage
 
-* [Define hardlink::link](manifests/link.pp)
+* [Class: hardlink](manifests/init.pp)
+* [Define: hardlink::link](manifests/link.pp)
 
 # Dependencies
 

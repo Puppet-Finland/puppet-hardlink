@@ -16,17 +16,17 @@
 #
 define hardlink::link
 (
-    $ensure = 'present',
-    $source
+    $source,
+    $ensure = 'present'
 )
 {
-    include hardlink::params
+    include ::hardlink::params
 
     $target = $title
 
     if $ensure == 'present' {
         exec { "hardlink-from-${source}-to-${target}":
-            path => [ '/bin' ],
+            path    => [ '/bin' ],
             command => "cp -l ${source} ${target}",
             creates => $target,
         }
