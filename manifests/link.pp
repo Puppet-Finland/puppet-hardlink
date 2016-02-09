@@ -27,7 +27,7 @@ define hardlink::link
     if $ensure == 'present' {
         exec { "hardlink-from-${source}-to-${target}":
             path    => [ '/bin' ],
-            command => "cp -l ${source} ${target}",
+            command => "cp -lr ${source} ${target}",
             creates => $target,
         }
     } elsif $ensure == 'absent' {
