@@ -26,9 +26,10 @@ define hardlink::link
 
     if $ensure == 'present' {
         exec { "hardlink-from-${source}-to-${target}":
-            path    => [ '/bin' ],
-            command => "cp -l ${source} ${target}",
-            creates => $target,
+            path    => [ '/bin', '/usr/bin' ],
+            command => "rm -f ${target}; cp -l ${source} ${target}",
+            # This works on GNU and FreeBSD find, and possibly others
+            unless  => "find ${target} -samefile ${source}|grep ${target}",
         }
     } elsif $ensure == 'absent' {
         file { $target:
