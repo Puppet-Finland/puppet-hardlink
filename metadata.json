@@ -2,7 +2,7 @@
   "name": "puppetfinland-hardlink",
   "version": "0.2.0",
   "author": "Puppet-Finland team",
-  "license": "BSD license",
+  "license": "BSD-2-Clause",
   "summary": "Manage hardlinks",
   "source": "https://github.com/Puppet-Finland/hardlink.git",
   "project_page": "https://github.com/Puppet-Finland/hardlink",
