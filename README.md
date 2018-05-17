@@ -4,21 +4,8 @@ A Puppet module for managing hardlinks.
 
 # Module usage
 
-* [Class: hardlink](manifests/init.pp)
-* [Define: hardlink::link](manifests/link.pp)
+Example of adding a hardlink:
 
-# Dependencies
-
-See [metadata.json](metadata.json).
-
-# Operating system support
-
-This module has been tested on
-
-* Ubuntu 12.04
-* Debian 7
-
-Any *NIX-style operating system should work out of the box.
-
-For details see [params.pp](manifests/params.pp).
-
+    ::hardlink::link { '/hardlink':
+      source => '/source_file',
+    }
