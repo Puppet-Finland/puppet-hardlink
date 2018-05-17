@@ -1,6 +1,6 @@
 {
   "name": "puppetfinland-hardlink",
-  "version": "0.2.0",
+  "version": "0.2.1",
   "author": "Puppet-Finland team",
   "summary": "Manage hardlinks",
   "license": "BSD-2-Clause",
